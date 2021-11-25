@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Predict document</title>
+</head>
+<body>
+    <h1>Predict document</h1>
+    <form action="http://localhost:5000/predict_file" method="POST"
+        enctype = "multipart/form-data">
+        {{input_text}} <br/><br/>
+        <input type="submit" name="predict" value="Predict"/> <br/><br/>
+        {{ results }}<br/><br/>
+        <input type="submit" name="back" value="Back"/>
+    </form>
+</body>
+</html>

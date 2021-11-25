@@ -1,0 +1,12 @@
+numpy
+pandas
+matplotlib
+seaborn
+scikit-learn
+ipython
+jupyter
+nltk
+wordcloud
+torch
+transformers
+spacy==3.1

@@ -1,0 +1,2 @@
+ads-50k.json filter=lfs diff=lfs merge=lfs -text
+ads_txt.zip filter=lfs diff=lfs merge=lfs -text

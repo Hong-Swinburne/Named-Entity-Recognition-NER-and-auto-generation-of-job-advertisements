@@ -1,0 +1,10 @@
+.vscode/
+__pycache__/
+ads_txt/
+misc/
+solutions/
+test_annotation/
+train/
+train_annotation/
+ads_txt.zip
+ads-50k.json
