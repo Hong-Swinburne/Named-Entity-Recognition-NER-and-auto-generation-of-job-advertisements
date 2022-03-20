@@ -58,26 +58,37 @@ The purpose of this task is to assist advertisers to automatically generate bett
       * **ad_xxxx.txt**: Example files of job advertisements for model inference
 
 3. Change path to `"\Docker"` folder and build Docker image on local machine by running
-    > cd Docker
-
-    > docker build -t ner_app_docker_image .
+    ```
+    cd Docker
+    docker build -t ner_app_docker_image .
+    ```
 
     After executing the above command in terminal, you will have a Docker image tagged with `ner_app_docker_image`. You may list all available Docker images on your machine using `docker image ls`
 
 4. Run Docker container on local machine
-    > docker container run -p 5000:5000 ner_app_docker_image
+   ```
+   docker container run -p 5000:5000 ner_app_docker_image
+   ```
 
 5. Open browser and input `localhost:5000` to test NER model on local machine. You may view the running Docker container by executing `docker ps` in terminal
 6. Stop the running Docker container
-    > docker stop containerID
+   ```
+   docker stop containerID
+   ```
 
     containerID is the CONTAINER ID of **ner_app_docker_image** which you may obtain by running `docker ps`
 7. Push Docker image to Docker Hub (docker.io)
    * Login Docker Hub using your userID and password in CLI
-        > docker login -u "userID" -p "password" docker.io
+     ```
+     docker login -u "userID" -p "password" docker.io
+     ```
 
    * Build a Docker image and tag it with your username and image name (ner_app_docker_image)
-        > docker build -t username/ner_app_docker_image .
+     ```
+     docker build -t username/ner_app_docker_image .
+     ```
 
    * Push Docker image to Docker Hub
-        > docker push username/ner_app_docker_image
+     ```
+     docker push username/ner_app_docker_image
+     ```
