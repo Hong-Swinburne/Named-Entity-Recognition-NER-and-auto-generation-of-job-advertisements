@@ -45,18 +45,6 @@ tokenizer = nlp.tokenizer
 for i in range(train_num + test_num):
     id = df.iloc[i]['id']
     text = df.iloc[i]['clean_text']
-    # convert to lower case
-    # text = [word.lower() for word in word_tokenize(text)]
-    # string = " ".join(text)
-    
-    # filename = 'ad_'+str(id)+'.txt'
-    # if i+1 < train_num:
-    #     with open(os.path.join('train', filename), 'w') as f:
-    #         f.write(string)
-            
-    # elif i+1 >= train_num & i+1 < (train_num + test_num):
-    #     with open(os.path.join('test', filename), 'w') as f:
-    #         f.write(string)
     
     sentences = sent_tokenize(text)
     if i < train_num:
